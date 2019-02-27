@@ -9,7 +9,7 @@
     {% csrf_token %}
 
     {% if form.errors %}
-    <div class="alert alert-warning alert-dismissable" role="alert">
+      <div class="alert alert-warning alert-dismissable" role="alert">
       <button class="close" data-dismiss="alert">
               <small><sup>x</sup></small>
             </button>
@@ -25,8 +25,9 @@
 
     {{ form.as_p }}
 
+    <p><small><a href="{% url 'change_password' %}">Click Here </a>to Change Your Password</small></p>
     <input type="submit" value="Edit Profile" class="btn btn-secondary">
   </form>
 
-<<br/><br/>
+<br/><br/>
 {% endblock %}
